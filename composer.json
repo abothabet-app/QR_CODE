@@ -109,7 +109,6 @@
         "cs": ["@lint", "@format:check"],
         "cs:fix": ["@lint:fix", "@format"],
         "analyze": ["@putenv APP_ENV=test", "mago analyze"],
-        "stan": "@analyze",
         "test": [
             "@parallel test:unit test:db",
             "@parallel test:api test:cli"
