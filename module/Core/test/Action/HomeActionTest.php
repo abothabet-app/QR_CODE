@@ -20,7 +20,9 @@ class HomeActionTest extends TestCase
         self::assertEquals(200, $response->getStatusCode());
         self::assertEquals('text/html; charset=utf-8', $response->getHeaderLine('Content-Type'));
         self::assertStringContainsString('<html lang="ar" dir="rtl">', $body);
-        self::assertStringContainsString('روابط قصيرة · رموز QR · تحليلات واضحة', $body);
+        self::assertStringContainsString('أبونابت للبرمجيات · روابط ذكية بأثر واضح', $body);
+        self::assertStringContainsString('حلول روابط ذكية، <em>بهوية رقمية أقوى.</em>', $body);
+        self::assertStringContainsString('/assets/abunabit-logo.webp', $body);
         self::assertStringContainsString('ابدأ من لوحة التحكم', $body);
         self::assertStringContainsString('كيف تبدأ؟', $body);
     }
