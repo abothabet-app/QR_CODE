@@ -20,3 +20,4 @@ mago-analyze-baseline.toml export-ignore
 phpunit.xml.dist export-ignore
 phpunit-api.xml export-ignore
 phpunit-db.xml export-ignore
+*.sh text eol=lf
