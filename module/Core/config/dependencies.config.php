@@ -214,6 +214,7 @@ return [
         ],
         Action\PixelAction::class => [ShortUrl\ShortUrlResolver::class, Visit\RequestTracker::class],
         Action\RobotsAction::class => [Crawling\CrawlingHelper::class, Config\Options\RobotsOptions::class],
+        Action\HomeAction::class => [],
 
         ShortUrl\Resolver\PersistenceShortUrlRelationResolver::class => [
             'em',

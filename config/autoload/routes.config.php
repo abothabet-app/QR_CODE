@@ -78,6 +78,14 @@ return (static function (): array {
 
             // Non-rest
             [
+                'name' => CoreAction\HomeAction::class,
+                'path' => '/',
+                'middleware' => [
+                    CoreAction\HomeAction::class,
+                ],
+                'allowed_methods' => [RequestMethodInterface::METHOD_GET],
+            ],
+            [
                 'name' => CoreAction\RobotsAction::class,
                 'path' => '/robots.txt',
                 'middleware' => [
