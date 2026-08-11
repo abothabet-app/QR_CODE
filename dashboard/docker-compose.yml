@@ -1,0 +1,14 @@
+services:
+  abunabit-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      PORT: "3000"
+      SHLINK_BASE_URL: ${SHLINK_BASE_URL}
+      SHLINK_API_KEY: ${SHLINK_API_KEY}
+      ADMIN_PASSWORD: ${ADMIN_PASSWORD}
+      SESSION_SECRET: ${SESSION_SECRET}
+    expose:
+      - "3000"
